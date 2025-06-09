@@ -1,65 +1,150 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Den & Yin Wedding Invitation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
-            margin: 0;
             font-family: 'Montserrat', sans-serif;
             background-color: #f9f3f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
+            overflow: hidden;
         }
-        .container {
-            text-align: center;
-            background: #fff5f5;
-            border: 1px solid #e3bfbf;
-            border-radius: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            padding: 20px;
-            max-width: 400px;
-        }
-        .container img {
-            width: 100%;
-            border-radius: 15px;
-        }
-        h1 {
+        .script-font {
             font-family: 'Great Vibes', cursive;
-            font-size: 2.5rem;
-            color: #8B0000;
-            margin: 1rem 0 0.5rem;
         }
-        button {
-            background-color: #8B0000;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 30px;
-            margin-top: 1rem;
-            font-weight: bold;
-            cursor: pointer;
+        .serif-font {
+            font-family: 'Cormorant Garamond', serif;
         }
-        iframe {
+        .cover-container {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d4b08c' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .floral-corner {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            opacity: 0.7;
+        }
+        .top-left {
+            top: 0;
+            left: 0;
+            transform: rotate(0deg);
+        }
+        .top-right {
+            top: 0;
+            right: 0;
+            transform: rotate(90deg);
+        }
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+            transform: rotate(270deg);
+        }
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
+        .btn-open {
+            transition: all 0.3s ease;
+            overflow: hidden;
+            position: relative;
+        }
+        .btn-open:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
             width: 100%;
-            height: 600px;
-            border: none;
-            margin-top: 2rem;
-            display: none;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.4s ease;
+        }
+        .btn-open:hover:before {
+            left: 100%;
+        }
+        .arabic-text {
+            font-size: 2rem;
+            line-height: 1.5;
+        }
+        @media (max-width: 640px) {
+            .arabic-text {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="e65a3b6e-3cc4-4660-af88-a12b3df40508.png" alt="Den & Yin Cover">
-        <h1>Den & Yin</h1>
-        <p>#menikahDENganYIN</p>
-        <button onclick="document.getElementById('invitationFrame').style.display='block'; this.style.display='none';">Buka Undangan</button>
-        <iframe id="invitationFrame" src="https://wedingkuyakin.my.canva.site/copy-of-web-invite-den-yin"></iframe>
+    <div class="cover-container min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+        <!-- Decorative floral corners -->
+        <div class="floral-corner top-left">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#d4b08c" d="M100,20 C120,40 150,40 170,20 C150,50 150,80 170,100 C140,80 110,80 100,100 C90,80 60,80 30,100 C50,80 50,50 30,20 C50,40 80,40 100,20 Z"></path>
+            </svg>
+        </div>
+        <div class="floral-corner top-right">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#d4b08c" d="M100,20 C120,40 150,40 170,20 C150,50 150,80 170,100 C140,80 110,80 100,100 C90,80 60,80 30,100 C50,80 50,50 30,20 C50,40 80,40 100,20 Z"></path>
+            </svg>
+        </div>
+        <div class="floral-corner bottom-left">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#d4b08c" d="M100,20 C120,40 150,40 170,20 C150,50 150,80 170,100 C140,80 110,80 100,100 C90,80 60,80 30,100 C50,80 50,50 30,20 C50,40 80,40 100,20 Z"></path>
+            </svg>
+        </div>
+        <div class="floral-corner bottom-right">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#d4b08c" d="M100,20 C120,40 150,40 170,20 C150,50 150,80 170,100 C140,80 110,80 100,100 C90,80 60,80 30,100 C50,80 50,50 30,20 C50,40 80,40 100,20 Z"></path>
+            </svg>
+        </div>
+
+        <!-- Main content -->
+        <div class="bg-white bg-opacity-80 rounded-lg p-8 md:p-12 max-w-md mx-4 text-center shadow-lg border border-amber-100 z-10 transform transition-all duration-700">
+            <!-- Basmallah in Arabic -->
+            <div class="arabic-text mb-6 text-amber-800">
+                بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+            </div>
+            
+            <p class="text-gray-600 mb-4 tracking-widest">YOU ARE INVITED TO THE WEDDING OF</p>
+            
+            <h1 class="script-font text-5xl md:text-6xl mb-2 text-amber-800">Den</h1>
+            <div class="flex justify-center items-center my-2">
+                <div class="h-px bg-amber-800 w-12"></div>
+                <div class="mx-4 text-2xl text-amber-800">&</div>
+                <div class="h-px bg-amber-800 w-12"></div>
+            </div>
+            <h1 class="script-font text-5xl md:text-6xl mb-8 text-amber-800">Yin</h1>
+            
+            <button id="openInvitation" class="btn-open bg-amber-800 hover:bg-amber-900 text-white py-3 px-8 rounded-full tracking-wider uppercase text-sm font-medium mt-4 shadow-md">
+                Open the Invitation
+            </button>
+        </div>
     </div>
-</body>
+
+    <script>
+        document.getElementById('openInvitation').addEventListener('click', function() {
+            // This would typically navigate to the next page of the invitation
+            alert('Welcome to Den & Yin\'s Wedding Invitation!');
+            // In a real implementation, you would add navigation to the next page here
+        });
+        
+        // Add a subtle entrance animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainContent = document.querySelector('.bg-white');
+            mainContent.style.opacity = '0';
+            mainContent.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                mainContent.style.opacity = '1';
+                mainContent.style.transform = 'translateY(0)';
+            }, 300);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94ceb721a185567c',t:'MTc0OTQ1MjA0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
