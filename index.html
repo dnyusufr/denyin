@@ -1,37 +1,65 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Undangan Ahmad & Fatima</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      background-color: #f8f3eb;
-      color: #5a4b3e;
-      font-family: 'Raleway', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Den & Yin Wedding Invitation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f9f3f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+            background: #fff5f5;
+            border: 1px solid #e3bfbf;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 400px;
+        }
+        .container img {
+            width: 100%;
+            border-radius: 15px;
+        }
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5rem;
+            color: #8B0000;
+            margin: 1rem 0 0.5rem;
+        }
+        button {
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            margin-top: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            margin-top: 2rem;
+            display: none;
+        }
+    </style>
 </head>
 <body>
-  <h1 class="text-2xl font-bold mb-4">Selamat Datang di Undangan</h1>
-  <p class="mb-4">Musik akan mulai diputar...</p>
-
-  <!-- Audio autoplay triggered by user interaction -->
-  <audio id="bg-music" autoplay>
-    <source src="music.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-  <script>
-    // Trigger autoplay in modern browsers after user arrives from Canva (buka undangan)
-    window.addEventListener('click', function() {
-      document.getElementById("bg-music").play();
-    });
-  </script>
+    <div class="container">
+        <img src="e65a3b6e-3cc4-4660-af88-a12b3df40508.png" alt="Den & Yin Cover">
+        <h1>Den & Yin</h1>
+        <p>#menikahDENganYIN</p>
+        <button onclick="document.getElementById('invitationFrame').style.display='block'; this.style.display='none';">Buka Undangan</button>
+        <iframe id="invitationFrame" src="https://wedingkuyakin.my.canva.site/copy-of-web-invite-den-yin"></iframe>
+    </div>
 </body>
 </html>
